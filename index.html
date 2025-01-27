@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Danial Ramezani</title>
     <meta name="author" content="Danial Ramezani">
-    
-    
-
-    
+       
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -19,11 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" rel="stylesheet" media="none" id="highlight_theme_light">
     <link href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" rel="stylesheet" media="none" id="highlight_theme_dark">
-   <!-- <link href="/assets/css/main.css" rel="stylesheet">-->
-    <!-- Favicon -->
-<!--   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
--->
-
 
 
 
@@ -45,30 +37,20 @@
 
     <header>
         <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-            <div class="container">
-                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse text-right" id="navbarNav">
-                    <ul class="navbar-nav ml-auto flex-nowrap">
-                        <li class="nav-item active"><a  href="/" style="margin-right:20px;color:white">About<span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a  href="/CV.html" style="margin-right:20px;color:white">CV</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="/publications/">Publications</a></li>-->
-                        <li class="nav-item"><a href="/articles/" style="margin-right:20px;color:white" >The Thought Hub</a></li>
-                        <!-- <li class="toggle-container">
-                            <button id="light-toggle" title="Change theme">
-                                <i class="fas fa-moon"></i>
-                                <i class="fas fa-sun"></i>
-                            </button>
-                        </li> -->
-                    </ul>
-                </div>
+          <div class="container">
+            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> <!-- Added navbar-toggler-icon -->
+            </button>
+            <div class="collapse navbar-collapse text-right" id="navbarNav">
+              <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item active"><a href="/" style="margin-right:20px;color:white">About<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="/CV.html" style="margin-right:20px;color:white">CV</a></li>
+                <li class="nav-item"><a href="/Articles.html" style="margin-right:20px;color:white">The Thought Hub</a></li>
+              </ul>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <main >    
         <div >
@@ -123,6 +105,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" crossorigin="anonymous"></script>
@@ -181,8 +164,35 @@ main {
     height :auto;
     border-radius: 10px;
     
-    
 }
+
+
+.navbar-toggler-icon {
+        border: none; /* Remove default border */
+        background-color: white; /* Black background */
+        padding: 10px 15px; /* Adjust padding */
+        border-radius: 2px;
+      }
+
+      .navbar-toggler-icon .line {
+        display: block;
+        width: 30px; /* Line width */
+        height: 4px; /* Line thickness */
+        margin: 6px auto; /* Spacing between lines */
+        background-color: white; /* White lines */
+        border-radius: 2px; /* Rounded edges for the lines */
+      }
+
+      /* Optionally: Change to a larger size when clicked or active */
+      .navbar-toggler-icon:focus {
+        outline: none;
+      }
+      
+      #navbar {
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+      }
 /* Responsive design for small screens */
 @media (max-width: 768px) {
     .container {

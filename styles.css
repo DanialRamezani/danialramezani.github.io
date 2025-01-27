@@ -1,28 +1,2 @@
 /* General body styling */
 
-/* Profile container styling */
-.profile-container {
-    display: flex;
-    flex-wrap: wrap; /* Adjust for smaller screens */
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    gap: 30px;
-}
-
-
-/* Right image styling */
-.profile-image img {
-    /* flex: 1; */
-    /* text-align: left; */
-    width: 100px;
-    height: 200 px;
-    /* max-width: 400px; */
-    border-radius: 10px; /* Rounded corners for the image */
-}
-
-img {
-    width: 200px; /* Adjust to your desired size */
-    height: auto; /* Maintain aspect ratio */
-}
-
