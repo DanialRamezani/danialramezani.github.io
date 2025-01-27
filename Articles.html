@@ -77,31 +77,31 @@
             
             <div class="container">
                 <div class="left">
-                    <div>
-
-                        <picture  > 
-                            <img class="profile-image" src="assets/img/profile.jpg" alt="Profile Picture"> 
-                        </picture>
-                    
-                        <div class="address" style= "text-align: center;">
-                        <!-- <p>Nguyen Engineering Building</p>
-                        <p>George Mason University</p>
-                        <p>Fairfax, VA 22030</p> -->
-                        </div>
-                    </div>    
-                    
-                    
+                    <div class="articles" class="article 1">
+                        <h1 > <a href='articles/Article-To_develop.html' class="clickable" style="font-size:32px">Quantifying the movies and series</a></h1>
+                        <p>Have you ever thought about an index or measure capable of assigning a score to movies or series while removing viewers' personal interests and biases? Here are some ideas. </p>
+                    </div>   
+                    <div class="articles" class="article 4">
+                        <h1 > <a href='articles/Article-To_develop.html' class="clickable" style="font-size:32px">Does technology limit our free will?</a></h1>
+                        <p>Does the abundance of technological means reduce our choices, thereby diminishing our free will and limiting our ability to make independent decisions? </p>
+                    </div> 
                     
                 </div>
+                <div class="middle">
+                    <div class="articles" class="article 2">
+                        <h1 > <a href='articles/Article-To_develop.html' class="clickable" style="font-size:32px">Where should the line be drawn when it comes to racism?</a></h1>
+                        <p>Is making fun of someone's appearance, such as large or small ears or nose, an act of racism, given that these features are passed down through generations and are a distinct trait of their people?</p>
+
+                    </div>
+                </div>    
+                    
+                    
+
                 
-                <div class="right">                        <header style= "text-align: center;">
-                    <h1 class="post-title">Danial</span> Ramezani</h1>
-                    <p class="desc">M.Sc. in System Engineering</p>
-                    </header>
-                    <div style="margin-top:150px; text-align: center;">
-                    <a class = 'clickable' style="color:white"  href="assets/CV/Danial Ramezani CV - Prospective PhD Student.pdf" download="custom-filename.pdf">
-                        Click here to download my CV
-                    </a>
+                <div class="right">                        
+                    <div class="articles" class="article 3">
+                        <h1 > <a href='articles/Article-To_develop.html' class="clickable" style="font-size:32px"> Fast food and evolution</a></h1>
+                        <p>What would happen in two or three decades from now if we stopped treating diseases caused by fast food consumption? What are the possible implications for the economy and society?</p>
                     </div>
                 </div>
             
@@ -167,19 +167,39 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom:50px;
+    margin-bottom:30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     
 }
-.left {
-    margin-top:10%;
-    width: 30%; /* 30% width for the left div */
+.articles{
+    border-bottom: 2px solid #ccc; /* Loose dashed line */
+    margin-bottom: 20px; /* Space between content and the line */
+    margin-left: 5px; /* Set left margin */
+    margin-right: 5px; /* Set right margin */
 }
 
+.left {
+    margin-top:10%;
+    text-align: center;
+    width: 33%; /* 30% width for the left div */
+    margin-left: 5px; /* Set left margin */
+    margin-right: 5px; /* Set right margin */
+}
+.middle {
+    margin-top:10%;
+    text-align: center;
+    width: 33%; /* 30% width for the middle div */
+    margin-left: 5px; /* Set left margin */
+    margin-right: 5px; /* Set right margin */
+}
 .right {
-    margin-top:5%;
-    width: 70%; /* 70% width for the right div */
-    margin-left:20px;
-    margin-right:80px;
+    margin-top:10%;
+    text-align: center;
+    width: 33%; /* 30% width for the right div */
+    margin-left: 5px; /* Set left margin */
+    margin-right: 5px; /* Set right margin */
 }
 .profile-image{
     width:100%;
@@ -193,21 +213,21 @@ main {
     .container {
         flex-direction: column; /* Stack the divs vertically */
     }
-    .left, .right {
+    .left, .middle, .right {
         width: 100%; /* Make both divs take full width in small screens */
     }
 }
 
 .clickable {
             text-decoration: none; /* Remove underline */
-            color: #007bff; /* Blue color */
+            color: white; /* Blue color */
             font-size: 18px;
             font-weight: bold;
         }
 
         /* Hover effect */
 .clickable:hover {
-            color: #0056b3; /* Darker blue */
+            color: white; /* Darker blue */
             text-decoration: underline; /* Add underline */
             transition: color 0.3s ease; /* Smooth transition */
         }

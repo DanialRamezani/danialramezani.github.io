@@ -76,34 +76,16 @@
             
             
             <div class="container">
-                <div class="left">
-                    <div>
-
-                        <picture  > 
-                            <img class="profile-image" src="assets/img/profile.jpg" alt="Profile Picture"> 
-                        </picture>
-                    
-                        <div class="address" style= "text-align: center;">
-                        <!-- <p>Nguyen Engineering Building</p>
-                        <p>George Mason University</p>
-                        <p>Fairfax, VA 22030</p> -->
-                        </div>
-                    </div>    
-                    
-                    
-                    
-                </div>
                 
-                <div class="right">                        <header style= "text-align: center;">
-                    <h1 class="post-title">Danial</span> Ramezani</h1>
-                    <p class="desc">M.Sc. in System Engineering</p>
-                    </header>
-                    <div style="margin-top:150px; text-align: center;">
-                    <a class = 'clickable' style="color:white"  href="assets/CV/Danial Ramezani CV - Prospective PhD Student.pdf" download="custom-filename.pdf">
-                        Click here to download my CV
-                    </a>
+                <div class="middle">
+                    <div>
+                        <h1>
+                        I am presently occupied with other commitments, but I will address this topic as soon as I am able to allocate some free time.
+                        </h1>
                     </div>
-                </div>
+                </div>    
+                    
+                    
             
            
         </div>
@@ -168,18 +150,26 @@ main {
     justify-content: center;
     width: 100%;
     margin-bottom:50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     
 }
+
 .left {
     margin-top:10%;
-    width: 30%; /* 30% width for the left div */
+    text-align: center;
+    width: 33%; /* 30% width for the left div */
 }
-
+.middle {
+    margin-top:10%;
+    text-align: center;
+    width: 100%; /* 30% width for the middle div */
+}
 .right {
-    margin-top:5%;
-    width: 70%; /* 70% width for the right div */
-    margin-left:20px;
-    margin-right:80px;
+    margin-top:10%;
+    text-align: center;
+    width: 33%; /* 30% width for the right div */
 }
 .profile-image{
     width:100%;
@@ -193,7 +183,7 @@ main {
     .container {
         flex-direction: column; /* Stack the divs vertically */
     }
-    .left, .right {
+    .left, .middle, .right {
         width: 100%; /* Make both divs take full width in small screens */
     }
 }
