@@ -61,46 +61,31 @@
             
             
             <div class="container">
-                <div class="left">
-                    <div>
-
-                        <picture  > 
-                            <img class="profile-image" src="assets/img/profile.jpg" alt="Profile Picture"> 
-                        </picture>
-                    
-                        <div class="address" style= "text-align: center;">
-                        <!-- <p>Nguyen Engineering Building</p>
-                        <p>George Mason University</p>
-                        <p>Fairfax, VA 22030</p> -->
-                        </div>
-                    </div>    
-                    
-                    
-                    
-                </div>
                 
-                <div class="right">                        <header style= "text-align: center;">
-                    <h1 class="post-title">Danial</span> Ramezani</h1>
-                    <p class="desc">M.Sc. in Systems Engineering</p>
-                    </header>
-                    <div style="margin-top:150px; text-align: center;">
-                    <a class = 'clickable' style="color:white"  href="assets/CV/Danial Ramezani_CV.pdf" download="custom-filename.pdf">
-                        Click here to download my CV
-                    </a>
+                <div class="middle">
+                    <div>
+                        <h1>
+                            Notebook LM: Best Tool Ever?. 
+                        </h1>
+                            <h3>
+                                If you've ever tried using a Large Language Model (LLM) for your work, you may have noticed how prone they are to hallucinations. This can be a major issue—especially when you need accurate information. Notebook LM (https://notebooklm.google/) is an extremely powerful and free-to-use LLM created by Google, and I believe it doesn’t get the respect it deserves. While it has a wide range of applications, I want to highlight its potential for reading academic articles.
+                                Unlike most other AIs (or at least their free versions), which do not have access to online sources, Notebook LM allows you to upload up to 50 sources and generates responses based solely on those. You might think that doesn’t sound particularly special, but here’s the kicker: unlike typical AIs that tend to hallucinate when they lack information, Notebook LM will simply respond that it cannot answer based on the provided sources.
+                                And that’s not all. Every sentence it generates includes a reference. You can upload websites, YouTube videos, plain text, slides, or even connect it to your Google Drive.
+                                I’ve been using it for a while to help me read academic papers. It’s especially useful when you’re interested in a specific aspect of a paper and don’t want to read the entire thing. It’s also helpful when something in the paper isn’t clear—for example, a parameter or an equation in a model.
+                                That said, it’s not perfect. There are some common challenges that I believe could, and probably should, be addressed. One of them is the lack of source organization. Currently, you can only add or delete sources—there’s no way to organize them into folders or categories. It would be much better if users could manage sources more efficiently. Another issue is its handling of mathematical equations: it displays LaTeX code instead of rendering the actual formulas. While that might not be a problem for those familiar with LaTeX, it can definitely be a barrier for those who aren’t. Even for those who do know LaTeX, reading long equations in code form can be cumbersome.
+                                Finally, Notebook LM is less creative compared to other LLMs, but that’s by design. It prioritizes accuracy and reduces hallucinations at the cost of creativity. So, if you’re looking for creativity, this may not be the tool for you.
+                                In conclusion, I think Notebook LM is an impressive tool for researchers, capable of producing accurate and well-cited responses—despite a few shortcomings. If you’re a student or researcher, give it a shot.                        </h3>
                     </div>
-                </div>
+                </div>    
+                    
+                    
             
            
         </div>
         <article class="contact">
 
             <div >
-                <div class="contact-icons" style="font-size: 48px;">
-                    <a href="mailto:danialramezani988@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <!-- <a href="https://scholar.google.com/citations?user=Kg8wOK8AAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a> -->
-                    <a href="https://github.com/deDg0d" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/danial-ramezani-48549a1b7/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                </div>
+
             </div>
         </article>
     </div>
@@ -131,7 +116,7 @@
 
 <!-- My Styles -->
 <style>
-    
+
 body {
     background-color: #101300 ;
     color: white;
@@ -153,18 +138,26 @@ main {
     justify-content: center;
     width: 100%;
     margin-bottom:50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     
 }
+
 .left {
     margin-top:10%;
-    width: 30%; /* 30% width for the left div */
+    text-align: center;
+    width: 33%; /* 30% width for the left div */
 }
-
+.middle {
+    margin-top:10%;
+    text-align: center;
+    width: 100%; /* 30% width for the middle div */
+}
 .right {
-    margin-top:5%;
-    width: 70%; /* 70% width for the right div */
-    margin-left:20px;
-    margin-right:80px;
+    margin-top:10%;
+    text-align: center;
+    width: 33%; /* 30% width for the right div */
 }
 .profile-image{
     width:100%;
@@ -205,7 +198,7 @@ main {
     .container {
         flex-direction: column; /* Stack the divs vertically */
     }
-    .left, .right {
+    .left, .middle, .right {
         width: 100%; /* Make both divs take full width in small screens */
     }
 }
